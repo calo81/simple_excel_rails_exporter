@@ -1,13 +1,30 @@
 SimpleExcelExporter
 ===================
 
-Introduction goes here.
+Simple Excel file exporter for Rails. Tested in 3.0.19
 
 
 Example
 =======
 
-Example goes here.
+
+class TestModel < OpenStruct
+  include Exportable
+
+  export :name, :type_p
+end
+
+
+class TestController < ApplicationController
+  def index
+    respond_to do |format|
+      format.xls { render :xls => [TestModel.new(:name => 'product1', :id => 1, :type_p => 'gran product'),
+                                   TestModel.new(:name => 'product2', :id => 2, :type_p => 'no gran product')] }
+    end
+  end
+end
+
+Then a request to "/test.xls" generates the XLS file
 
 
 Copyright (c) 2013 [name of plugin creator], released under the MIT license
