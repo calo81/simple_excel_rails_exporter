@@ -28,4 +28,4 @@ end
 Then a request to "/test.xls" generates the XLS file
 
 
-Copyright (c) 2013 [name of plugin creator], released under the MIT license
+Copyright (c) 2013 Carlo Scarioni, released under the MIT license
