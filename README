@@ -3,6 +3,8 @@ SimpleExcelExporter
 
 Simple Excel file exporter for Rails. Tested in 3.0.19
 
+It is a plugin for Rails 3.0 so when downloaded, needs to be copied into the folder "vendor/plugins" of your rails app
+
 
 Example
 =======
