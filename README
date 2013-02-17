@@ -7,6 +7,7 @@ Simple Excel file exporter for Rails. Tested in 3.0.19
 Example
 =======
 
+require 'simple_excel_exporter'
 
 class TestModel < OpenStruct
   include Exportable
